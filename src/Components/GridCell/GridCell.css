@@ -16,19 +16,8 @@
 	font-size: 15px;
 }
 
-.Cell > button.S, .Cell > button.E, .Cell > button.v {
+.Cell > button.S, .Cell > button.E, .Cell > button.P {
 	background: #3498db;
 	color: #fff;
 	text-align: center;
-}
-
-.Grid:focus {
-	outline: none;
-}
-
-.Grid:hover {
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  color: #1d1e22;
-  cursor: pointer;
 }

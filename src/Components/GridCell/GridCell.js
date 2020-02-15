@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './GridCell.css'
 
 const GridCell = ({ handleClick, value }) => {

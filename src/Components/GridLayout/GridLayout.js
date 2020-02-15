@@ -6,6 +6,11 @@ import './GridLayout.css'
 const GridLayout = ({ handleClick, classVal }) => {
 	let value = ''
 	
+	// get the layout of the warehouse based on json
+	// empty spaces denote aisle
+	// numbers denote rows
+	// alphabets denote columns
+	// cell denote a column where drone will scan
 	return (
 		<div className='Container'>
 		  <table className='Table'>
@@ -28,7 +33,7 @@ const GridLayout = ({ handleClick, classVal }) => {
 		      						}
 		      						else if (classVal['Path'].includes(val)){
 
-		      							value = 'v'
+		      							value = 'P'
 		      						}
 		      						else {
 		      							value = ''
