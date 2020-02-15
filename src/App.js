@@ -28,14 +28,16 @@ function App() {
 
     let sj = start[1]
     let ej = end[1]
+    let s = sj
+    let e = ej
     console.log(classVal.S, classVal.E)
-    console.log(sj, ej, Boolean(sj === ej))
+    console.log(sj, ej)
 
-    if (sj <= ej) {
+    if (s <= e) {
       console.log('inside right')
       handleDirection(start, end, dir, PathRight)
     }
-    else if (sj > ej) {
+    else if (s > e) {
       handleDirection(start, end, dir, PathLeft)
     }
 

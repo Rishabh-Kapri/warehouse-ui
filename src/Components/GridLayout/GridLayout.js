@@ -28,7 +28,7 @@ const GridLayout = ({ handleClick, classVal }) => {
 		      						}
 		      						else if (classVal['Path'].includes(val)){
 
-		      							value = 'P'
+		      							value = 'v'
 		      						}
 		      						else {
 		      							value = ''

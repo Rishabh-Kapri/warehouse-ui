@@ -1,3 +1,20 @@
 .Hidden {
 	display: none;
 }
+
+.Show > button {
+	margin: 20px;
+	border: 1px solid #2c303a;
+	background: #2c303a;
+	border-radius: 12px;
+	color: #fff;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.Show > button:hover {
+	background: #fff;
+	color: #2c303a;
+}

@@ -16,7 +16,7 @@
 	font-size: 15px;
 }
 
-.Cell > button.S, .Cell > button.E, .Cell > button.P {
+.Cell > button.S, .Cell > button.E, .Cell > button.v {
 	background: #3498db;
 	color: #fff;
 	text-align: center;
