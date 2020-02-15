@@ -1,0 +1,34 @@
+.Cell {
+	margin: 0;
+	padding: 0;
+	float: left;
+
+}
+
+.Cell > button {
+	display: inline-block;
+	cursor: pointer;
+	background: #2c303a;
+	border: 1px solid #2c303a;
+	border-radius: 26%; ;
+	height: 30px;
+	width: 30px;
+	font-size: 15px;
+}
+
+.Cell > button.S, .Cell > button.E, .Cell > button.P {
+	background: #3498db;
+	color: #fff;
+	text-align: center;
+}
+
+.Grid:focus {
+	outline: none;
+}
+
+.Grid:hover {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #1d1e22;
+  cursor: pointer;
+}

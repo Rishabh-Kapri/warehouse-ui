@@ -1,0 +1,21 @@
+.Container {
+	/*display: grid;
+	grid-template-columns: repeat(22, 30px);
+	grid-template-rows: repeat(2, 30px) 10px repeat(2, 30px) 10px repeat(2, 30px) 10px repeat(2, 30px);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; */
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	box-sizing: inherit;
+}
+
+.Table {
+	width: 100%;
+	
+}
+
+td {
+	width: 30px;
+	height: 30px;
+}
