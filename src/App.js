@@ -10,7 +10,10 @@ function App() {
   const initialState = {
     'S': '',
     'E': '',
-    'Path': []
+    'Path': {
+      0: [],
+      1: []
+    }
   }
 
   // state to store starting, end and path positions
@@ -19,6 +22,10 @@ function App() {
   // define what rows and cols is of the warehouse
   const [rows, setRows] = useState([1,2,3,4,5,6,7,8,9,10])
   const [cols, setCols] = useState([1,4,5,8,9,12,13,16,17,20])
+
+  useEffect(() => {
+    console.log('useEffect')
+  }, [])
 
   // start new mission
   const onReset = () => {
@@ -29,16 +36,16 @@ function App() {
   // if starting column is less than end column
   // move right, else move left
   //
-  // After direction is determined pass the relevant
+  // After direction is determined, pass the relevant
   // function to check for up and down motion
   const checkPath = (dir) => {
     let start = classVal['S'].split(',')
     let end = classVal['E'].split(',')
 
-    let sj = start[1]
-    let ej = end[1]
+    let sj = parseInt(start[1])
+    let ej = parseInt(end[1])
     
-    if (sj <= ej) {
+    if (sj < ej) {
       handleDirection(start, end, dir, PathRight)
     }
     else {

@@ -16,7 +16,10 @@ const PathDown = (start, end, rows, cols, dir) => {
 	let a = si
 	let z = sj
 	// Array to store the paths that need to be highlighted
-	let path = []
+	let path = {
+		0: [],
+		1: []
+	}
 
   // main loop to check if we are on the nd column
 	while(sj <= ej){
@@ -31,7 +34,7 @@ const PathDown = (start, end, rows, cols, dir) => {
 	      	// also break if column isn't a valid one
 	      	if (!cols.includes(z))
 	      		break
-	        path.push(a.toString() + ',' + z.toString())
+	        path[0].push(a.toString() + ',' + z.toString())
 	        si = a
 	      }
 	    }
@@ -54,7 +57,7 @@ const PathDown = (start, end, rows, cols, dir) => {
 	      	// also break is column isn't valid
 	      	if (!cols.includes(z))
 	      		break
-	        path.push(a.toString() + ',' + z.toString())
+	        path[1].push(a.toString() + ',' + z.toString())
 	        si = a
 	       }
 	    }

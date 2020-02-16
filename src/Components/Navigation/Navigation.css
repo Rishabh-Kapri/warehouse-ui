@@ -3,18 +3,21 @@
 }
 
 .Show > button {
+	box-sizing: border-box;
 	margin: 20px;
 	border: 1px solid #fff;
-	background: #2c303a;
-	border-radius: 12px;
+	background: transparent;
+	border-radius: .6em;
 	color: #fff;
-	width: 80px;
-	height: 40px;
+	padding: 12px 30px;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .Show > button:hover {
 	background: #fff;
 	color: #2c303a;
+	
 }

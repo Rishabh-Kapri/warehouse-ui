@@ -1,23 +1,36 @@
 .Cell {
-	margin: 0;
+	margin: 2px;
 	padding: 0;
 	float: left;
-
+	height: 30px;
+	width: 30px;
 }
 
 .Cell > button {
+	padding: 0px;
 	display: inline-block;
 	cursor: pointer;
 	background: #2c303a;
-	border: 1px solid #2c303a;
+	border: none;
 	border-radius: 26%; ;
 	height: 30px;
 	width: 30px;
 	font-size: 15px;
+	vertical-align: bottom;
 }
 
-.Cell > button.S, .Cell > button.E, .Cell > button.P {
+button.Bg-Color {
 	background: #3498db;
+}
+
+.S, .E {
+	font-weight: 600;
 	color: #fff;
+}
+
+svg {
+	color: #fff;
+	height: 15px;
+	width: 15px;
 	text-align: center;
 }
